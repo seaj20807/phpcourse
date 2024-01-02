@@ -1,0 +1,128 @@
+/* Body styles */
+body {
+    background-image: url(bgmodel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(135, 135, 135, 0.9);
+    width: fit-content;
+}
+
+/* Header 1 styles */
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    padding: 0.2em;
+}
+
+/* Main styles */
+main {
+    margin: 13% 10% 20% 10%;
+    background-color: rgba(135, 135, 135, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+/* Search results confirmation styles */
+p {
+    padding: 0 0 0.5em 0.85em;
+}
+
+/* Fieldset styles */
+fieldset {
+    border: 0;
+}
+
+/* Legend styles */
+legend {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    padding-top: 0.4em;
+}
+
+/* Input styles */
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    background-color: rgba(180, 180, 180, 0.9);
+    border: 2px solid rgb(80, 80, 80);
+}
+
+/* Flex container (search result container) styles */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10% 0 10%;
+    border: 2px solid rgb(80, 80, 80);
+}       
+
+/* Flex content (search result description) styles */
+.desc {
+    flex: 35%;
+    padding: 0.2em;
+    background-color: rgba(180, 180, 180, 0.9);
+}
+
+/* Flex content (search result data) styles */
+.data {
+    flex: 35%;
+    padding: 0.2em;
+    background-color: rgba(180, 180, 180, 0.9);
+}
+
+/* Adjustments for tablet and mobile screens */
+@media only screen and (max-width: 770px) {
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    main {
+        font-size: 3vw;
+    }
+
+    legend {
+        font-size: 4vw;
+    }
+
+    input {
+        font-size: 3vw;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    main {
+        font-size: 4vw;
+    }
+
+    legend {
+        font-size: 5vw;
+    }
+
+    input {
+        font-size: 4vw;
+        margin-top: 0.5em;
+    }
+
+    .flex {
+        flex-flow: column nowrap;
+    }
+
+    .desc {
+        flex: 100%;
+    }
+
+    .data {
+        flex: 100%;
+    }
+}

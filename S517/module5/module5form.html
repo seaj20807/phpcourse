@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- Metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+		<meta name="author" content="Sampo Jaakkola">
+        <meta name="description" content="Sampo Jaakkolas contact form submission confirmation"> 
+        <meta name="keywords" content=" Contact, form, Sampo, Jaakkola, submission, confirmation ">
+
+		<title>Sampo Jaakkola</title>
+		<link rel="stylesheet" href="module5styles.css">
+	</head>
+
+	<body>
+
+		<!-- Main content -->
+		<main>
+			
+            <!-- Contact form -->
+			<h1>Contact me</h1>
+			
+            <p>Fill out the form below and I'll respond as soon as I can!</p>
+
+            <form method="post" action="module5script.php">
+
+                <fieldset>   
+			        <legend>Contact information</legend>
+                    <!-- Field for first name -->
+                    <p>
+                        <label for="firstName" class="contact">First name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </p>
+                    <!-- Field for last name -->
+                    <p>
+                        <label for="lastName" class="contact">Last name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </p>
+                    <!-- Field for e-mail -->
+                    <p>
+                        <label for="email" class="contact">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <!-- Field for city -->
+                    <p>
+                        <label for="city" class="contact">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </p>
+                    <!-- Some of the stuff below like phone number and contacting reason are there because I plan to use this form as a template
+                    in another project, hope it's ok! -->
+                    <!-- Field for optional phone number -->
+                    <p>
+                        <label for="tel" class="contact">Phone number (optional):</label>
+                        <input type="tel" id="tel" name="tel">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Subject</legend>
+                    <!-- Options for contacting reason -->
+                    <p>
+                        <input type="radio" value="hiring" id="hiring" name="subject" required>
+                        <label for="hiring">I want to hire you!</label>
+                        <input type="radio" value="teaching" id="teaching" name="subject" required>
+                        <label for="teaching">I want you to teach me!</label>
+                        <input type="radio" value="other" id="other" name="subject" required>
+                        <label for="other">Other (specify below for example).</label>
+                    </p>
+                    <!-- Free text area -->
+                    <p>
+                        <label for="education">Specify your education:</label>
+                        <textarea id="education" name="education" rows="5" cols="50" required></textarea>
+                    </p>
+                </fieldset>
+                <!-- Buttons for submitting or resetting data -->
+                <div>
+                    <input type="submit" value="Send" id="submit" name="submit">
+                    <input type="reset" value="Clear" id="reset" name="reset">
+                </div>
+            </form>
+		
+		</main>
+
+	</body>
+
+</html>

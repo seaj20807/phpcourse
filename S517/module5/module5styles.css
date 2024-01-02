@@ -1,0 +1,74 @@
+/* Background styles */
+body {
+	width: 60%;
+	margin: 0 auto;
+	background-color: rgba(136, 155, 128);
+}
+
+/* Main form area styles */
+fieldset {
+	border: 2px solid rgba(77, 77, 80);
+	margin-bottom: 20px;
+	width: 80%;
+	background-color: rgba(217, 228, 212, 0.9);
+}
+
+/* Form legend styles */
+legend {
+	border: 2px solid rgba(77, 77, 80);
+	color: rgba(77, 77, 80);
+	background-color: rgba(239, 244, 236);
+	padding: 10px 13px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+/* Submit and reset button styles */
+input[type="submit"], input[type="reset"] {
+	border: 2px solid rgba(77, 77, 80);
+	color: rgba(77, 77, 80);
+	background-color: rgba(239, 244, 236);
+}
+
+/* Free text area user input styles */
+input, textarea {
+	background-color: rgba(239, 244, 236);
+    font-size: 20px;
+}
+
+/* User input styles */
+input[type="text"], input[type="email"] {
+	width: 80%;
+}
+
+/* Free text area control */
+textarea {
+	margin-left: 100px;
+	width: 80%;
+	height: 5em;
+}
+
+label {
+        font-size: 20px;
+        display: inline-block;  /* To make the inline label element act like a block-level element */
+}
+
+.contact {
+	 width: 100px; /* To give the label elements in the Contact section a similar fixed width. */
+}
+
+/* Layout control for smaller screens */
+@media screen and (max-width: 70em) {
+	
+	input[type="text"], input[type="email"] {
+	width: 95%;
+}
+
+textarea {
+	margin-left: 0px;
+	width: 95%;
+	}	
+}	
+	
+	
+	

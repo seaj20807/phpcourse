@@ -1,0 +1,156 @@
+/* Top navigation bar */
+.topnav {
+    background-color: beige;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 0 0.2em 0.2em;
+    position: fixed;
+}
+
+/* Top nav link styles */
+a {
+    color: black;
+    text-decoration: none;
+    padding-right: 0.5em;
+}
+
+/* Active page indicator */
+.active {
+    text-decoration: underline;
+}
+
+/* Header styles */
+header {
+    font-size: 2vw;
+    padding: 1em 0 0 1em;
+}
+
+/* Body styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5vw;
+    background-color: rgb(170, 170, 160);
+}
+
+/* Main styles */
+main {
+    background-color: rgb(200, 200, 190);
+    margin: 0 5% 0 5%; 
+}
+
+/* Input area styles */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "legend legend legend legend"
+        "label1 input1 input1 input1"
+        "label2 input2 input2 input2"
+        "submit . . .";
+    gap: 0.5em 0.5em;
+}
+
+/* Form styles */
+form {
+    padding: 0.5em 0 0.3em 0;
+}
+
+/* Form fieldset styles */
+fieldset {
+    border: 0;
+}
+
+/* Form legend styles */
+legend {
+    grid-area: legend;
+}
+
+/* Form label styles */
+label {
+    grid-area: label;
+}
+
+/* Form input styles */
+input {
+    grid-area: input;
+    width: 80%;
+    border: 2px solid rgba(77, 77, 80);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5vw;
+    background-color: beige;
+}
+
+/* Grid area assignments
+Looks kinda funky this part of the code but hey, It's a start to getting familiar with grid :D
+I had quite the fun times wondering why all my labels and inputs went to one place and on top of each other, until I realized they all had the same "name"... */
+.label1 {
+    grid-area: label1;
+}
+
+.label2 {
+    grid-area: label2;
+}
+
+.input1 {
+    grid-area: input1;
+}
+
+.input2 {
+    grid-area: input2;
+}
+
+.grid-submit {
+    grid-area: submit;
+    width: 7em;
+}
+
+/* Bottom "navigation" bar */
+.botnav {
+    background-color: beige;
+    font-size: 1.5vw;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 0.2em 0;
+    position: fixed;
+}
+
+/* Form feedback styles */
+.feedback {
+    font-style: italic;
+    padding: 1em 0 0 1em;
+}
+
+/* Media screen adjustments */
+@media only screen and (max-width: 580px) {
+
+    header {
+        font-size: 4vw;
+    }
+
+    body {
+        font-size: 5vw;
+    }
+
+    .grid-container {
+        grid-template-areas: 
+            "legend legend legend legend"
+            "label1 label1 label1 label1"
+            "input1 input1 input1 input1"
+            "label2 label2 label2 label2"
+            "input2 input2 input2 input2"
+            "submit . . .";
+    }
+
+    input {
+        font-size: 3vw;
+    }
+
+    .botnav {
+        font-size: 3vw;
+    }
+
+}

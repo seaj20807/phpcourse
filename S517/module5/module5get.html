@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="utf-8"> 
+
+<meta name="description" content="Application form for Greene County Literacy Coalition tutors">
+<meta name="keywords" content="Greene County Indiana, Greene County Literacy Coalition, tutors, literacy">
+<meta name="author" content="Greene County Literacy Coalition">
+
+<title>Greene County Literacy Coalition Application</title>
+
+<style type="text/css">
+
+body	{
+	width: 60%;
+	margin: 0 auto;
+	}
+
+fieldset	
+	{
+	border: 2px solid #000;
+	margin-bottom: 20px;
+	}
+
+
+legend		
+	{
+	color: #fff;
+	background-color: #000;
+	padding: 2px 6px;
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+
+input, textarea	
+	{
+	background-color: #ffc;
+	}
+
+/* This style is a special selector that applies itself based on an attribute -- in this case text. That way I can style the input fields and NOT the submit and reset buttons */ 
+  
+input[type="text"]
+	{
+	width: 15em;
+	}
+	
+textarea
+	{
+	width: 90%;
+	height: 10em;
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+
+<h1>Greene County Literacy Coalition Tutor Application</h1>
+
+<p>If you are interested in participating in this program, please fill in the following:</p>
+                     
+<form method="get" action="module5get.php">
+
+<fieldset>
+<legend>Contact information</legend>
+<p>
+<label for="firstname">First name:</label>
+<input type="text" id="firstname" name="firstname">
+</p>
+
+<p>
+<label for="lastname">Last name:</label>
+<input type="text" id="lastname" name="lastname">
+</p>
+</fieldset>
+
+<fieldset>
+<legend>Experience</legend>
+<p>
+<label for="experiences">Experiences that may be helpful:</label>
+</p>
+
+<p>
+<textarea id="experiences" name="experiences"></textarea>
+</p>
+</fieldset>
+
+<fieldset>
+<p>I would be interested in in-service sessions.</p>
+<input type="radio" value="yes" id="yes" name="service">
+<label for="yes">Yes</label>
+<input type="radio" value="no" id="no" name="service">
+<label for="no">No</label>
+
+<p><label for="states">Where can you work?</label></p>
+<select id="states" name="states">
+<option value="none chosen">----</option>
+<option value="Arizona">Arizona</option>
+<option value="Alaska">Alaska</option>
+<option value="Arkansas">Arkansas</option>
+<option value="California">California</option>
+</select>
+</fieldset>
+
+<p>
+<input type="submit" value="Send" id="submit" name="submit">
+<input type="reset" value="Clear" id="reset" name="reset">
+</p>
+</form>
+
+</body>
+</html>

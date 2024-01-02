@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+		<meta name="author" content="Sampo Jaakkola">
+        <meta name="description" content="Survey form"> 
+        <meta name="keywords" content="Survey, form">
+
+		<title>Survey</title>
+		<link rel="stylesheet" href="module7styles.css">
+
+	</head>
+
+	<body>
+
+		<!-- Main content -->
+		<main>
+			
+            <!-- Registration form -->
+            <form method="post" action="module7script.php">
+
+                <fieldset>
+
+                    <legend><h1>Survey</h1></legend> 
+		            <p>Please fill out the survey!</p>
+
+                    <!-- Field for first name -->
+                    <p>
+                        <label for="firstName" class="contact">First name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </p>
+
+                </fieldset>
+                    
+                <fieldset>
+                    
+                    <legend><h2>Select your favorite weekdays:</h2></legend>
+                   
+                    <!-- Checkboxes for weekdays -->
+                    <p>
+                        <input type="checkbox" id="monday" value="Monday" name="weekdays[]">
+                        <label for="monday">Monday</label>  
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="tuesday" value="Tuesday" name="weekdays[]">
+                        <label for="tuesday">Tuesday</label>  
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="wednesday" value="Wednesday" name="weekdays[]">
+                        <label for="wednesday">Wednesday</label>  
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="thursday" value="Thursday" name="weekdays[]">
+                        <label for="thursday">Thursday</label>  
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="friday" value="Friday" name="weekdays[]">
+                        <label for="friday">Friday</label>  
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="saturday" value="Saturday" name="weekdays[]">
+                        <label for="saturday">Saturday</label>  
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="sunday" value="Sunday" name="weekdays[]">
+                        <label for="sunday">Sunday</label>  
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend><h2>Select your favorite seasons:</h2></legend>
+
+                    <!-- Checkboxes for seasons -->
+                    <p>
+                        <input type="checkbox" id="spring" value="Spring" name="seasons[]">
+                        <label for="spring">Spring</label>
+                        
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="summer" value="Summer" name="seasons[]">
+                        <label for="summer">Summer</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="autumn" value="Autumn" name="seasons[]">
+                        <label for="autumn">Autumn</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="winter" value="Winter" name="seasons[]">
+                        <label for="winter">Winter</label>
+                    </p>
+
+                </fieldset>
+       
+                <!-- Buttons for submitting or resetting data -->
+                <div>
+                    <input type="submit" value="Send" id="submit" name="submit">
+                    <input type="reset" value="Clear" id="reset" name="reset">
+                </div>
+
+            </form>
+
+		</main>
+
+	</body>
+
+</html>

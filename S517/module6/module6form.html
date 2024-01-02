@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- Metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+		<meta name="author" content="Sampo Jaakkola">
+        <meta name="description" content="Registration form"> 
+        <meta name="keywords" content="Registration, form">
+
+		<title>Registration</title>
+		<link rel="stylesheet" href="module6styles.css">
+	</head>
+
+	<body>
+
+		<!-- Main content -->
+		<main>
+			
+            <!-- Registration form -->
+            <form method="post" action="module6script.php">
+
+                <fieldset>
+
+                    <legend><h1>Registration</h1></legend> <!-- H1 element to pass an accessibility alert -->
+		            <p>Please register to access our site!</p>
+
+                    <!-- Field for first name -->
+                    <p>
+                        <label for="firstName" class="contact">First name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </p>
+                    <!-- Field for last name -->
+                    <p>
+                        <label for="lastName" class="contact">Last name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </p>
+                    <!-- Field for age -->
+                    <p>
+                        <label for="birthYear" class="contact">Year of birth:</label>
+                        <input type="number" id="birthYear" name="birthYear" min="1900" max="2022" required> <!-- Guess I could've given a suitable minmax here to filter out the youngsters, but the assignment wanted us to work it out with PHP instead :) -->
+                    </p>
+                    <!-- Field for username -->
+                    <p>
+                        <label for="username" class="contact">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </p>
+
+                </fieldset>
+       
+                <!-- Buttons for submitting or resetting data -->
+                <div>
+                    <input type="submit" value="Send" id="submit" name="submit">
+                    <input type="reset" value="Clear" id="reset" name="reset">
+                </div>
+            </form>
+
+		</main>
+
+	</body>
+
+</html>

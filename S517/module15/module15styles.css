@@ -1,0 +1,219 @@
+/* Top navigation bar */
+.topnav {
+    background-color:rgba(120, 120, 120);
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0 0.2em 0.2em;
+    position: fixed;
+}
+
+/* Link Styles */
+a {
+    color: rgb(140, 255, 255);
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+/* Active page indicator */
+.active {
+    color: rgb(140, 255, 150);
+}
+
+/* Header styles */
+header {
+    font-size: 2vw;
+    text-align: center;
+    padding: 1em 0 0 1em;
+}
+
+/* Body styles */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5vw;
+    color: rgb(140, 255, 150);
+    background-color: rgb(90, 90, 90);
+    background-image: url(space.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Main styles */
+main {
+    background-color: rgba(90, 90, 90, 0.8);
+    margin: 0 20% 0 20%; 
+}
+
+/* Form styles */
+form {
+    padding: 0.5em 0 0.3em 0;
+}
+
+/* Form fieldset styles */
+fieldset {
+    border: 0;
+}
+
+/* Label styles */
+label {
+    display: inline-block;
+}
+
+/* Registration form label width */
+.contact {
+    width: 5em;
+}
+
+/* Form input styles */
+input {
+    grid-area: input;
+    color: black;
+    border: 2px solid rgba(225, 225, 225);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5vw;
+    background-color: white;
+}
+
+input[type="text"] {
+    width: 50%;
+}
+
+input[type="number"] {
+    width: 30%;
+}
+
+input[type="submit"] {
+    width: 20%;
+}
+
+/* Form feedback styles */
+.feedback {
+    text-align: center;
+    font-style: italic;
+    padding: 1em 0 0 1em;
+}
+
+/* Table area styles */
+.tableArea {
+    padding-bottom: 0.1em;
+}
+
+/* Table styles */
+table, th, td {
+    font-size: 1.5vw;
+    color: black;
+    border: 2px solid rgba(225, 225, 225);
+    border-collapse: collapse;
+    margin: 0 1.3em 2em 1.3em;
+}
+
+/* Table header styles */
+th > a {
+    color: black;
+}
+
+th, td {
+    background-color: rgb(255, 255, 255);
+    padding: 0.2em;
+}
+
+/* Bottom "navigation" bar */
+.botnav {
+    background-color: rgb(60, 60, 60);
+    color: rgb(140, 255, 255);
+    font-size: 1.5vw;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0 0.2em 0;
+    position: fixed;
+}
+
+/* Media screen adjustments */
+@media only screen and (max-width: 770px) {
+
+    header {
+        font-size: 3vw;
+    }
+
+    body {
+        font-size: 3.5vw;
+    }
+
+    main {
+        margin: 0 10% 0 10%; 
+    }
+
+    input {
+        font-size: 2.5vw;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+    
+    input[type="number"] {
+        width: 40%;
+    }
+    
+    input[type="submit"] {
+        width: 30%;
+    }
+
+    table, th, td {
+        font-size: 2.5vw;
+    }
+
+    .botnav {
+        font-size: 2.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    header {
+        font-size: 4vw;
+    }
+
+    main {
+        margin: 0 5% 0 5%;
+        min-width: fit-content;
+    }
+
+    body {
+        font-size: 4.5vw;
+    }
+
+    input {
+        font-size: 3.5vw;
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+    
+    input[type="number"] {
+        width: 50%;
+    }
+    
+    input[type="submit"] {
+        width: 40%;
+    }
+
+    table, th, td {
+        font-size: 3.5vw;
+    }
+
+    .botnav {
+        font-size: 3.5vw;
+    }
+
+}
